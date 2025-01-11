@@ -14,7 +14,8 @@
     ipykernel
     autobahn
   ];
-in buildPythonPackage rec {
+in
+  buildPythonPackage rec {
     pname = "vpython";
     version = "7.6.5";
 
@@ -24,10 +25,12 @@ in buildPythonPackage rec {
     };
 
     pyproject = true;
-    build-system = with python3Packages; [
-      setuptools-scm
-      cython
-    ] ++ dependencies;
+    build-system = with python3Packages;
+      [
+        setuptools-scm
+        cython
+      ]
+      ++ dependencies;
 
     inherit dependencies;
 

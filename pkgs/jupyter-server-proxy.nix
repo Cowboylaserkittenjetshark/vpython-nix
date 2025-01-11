@@ -23,11 +23,13 @@ in
     };
 
     pyproject = true;
-    build-system = with python3Packages; [
-      jupyter
-      hatchling
-      hatch-jupyter-builder
-    ] ++ dependencies;
+    build-system = with python3Packages;
+      [
+        jupyter
+        hatchling
+        hatch-jupyter-builder
+      ]
+      ++ dependencies;
 
     inherit dependencies;
 
