@@ -13,12 +13,12 @@
         inherit (pkgs) callPackage;
       in {
         packages = rec {
-          vpython = callPackage ./vpython.nix {
+          vpython = callPackage ./pkgs/vpython.nix {
             inherit jupyterlab-vpython jupyter-server-proxy;
           };
-          jupyterlab-vpython = callPackage ./jupyterlab-vpython.nix {};
-          jupyter-server-proxy = callPackage ./jupyter-server-proxy.nix {inherit simpervisor;};
-          simpervisor = callPackage ./simpervisor.nix {};
+          jupyterlab-vpython = callPackage ./pkgs/jupyterlab-vpython.nix {};
+          jupyter-server-proxy = callPackage ./pkgs/jupyter-server-proxy.nix {inherit simpervisor;};
+          simpervisor = callPackage ./pkgs/simpervisor.nix {};
         };
         formatter = pkgs.alejandra;
       };
