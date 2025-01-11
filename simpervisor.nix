@@ -20,6 +20,6 @@ in
       changelog = "https://github.com/jupyterhub/simpervisor/blob/main/CHANGELOG.md";
       description = "Simple async process supervisor";
       homepage = "https://github.com/jupyterhub/simpervisor";
-      license = lib.licenses.bsd;
+      license = lib.licenses.bsd3;
     };
   }

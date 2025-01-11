@@ -35,6 +35,6 @@ in
       changelog = "https://jupyter-server-proxy.readthedocs.io/en/latest/changelog.html";
       description = "Jupyter notebook server extension to proxy web services";
       homepage = "https://github.com/jupyterhub/jupyter-server-proxy";
-      license = lib.licenses.bsd;
+      license = lib.licenses.bsd3;
     };
   }

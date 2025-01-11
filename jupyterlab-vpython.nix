@@ -25,6 +25,6 @@ in
       changelog = "https://github.com/jcoady/jupyterlab_vpython/blob/main/CHANGELOG.md";
       description = "VPython extension for JupyterLab";
       homepage = "https://github.com/jcoady/jupyterlab_vpython";
-      license = lib.licenses.bsd;
+      license = lib.licenses.bsd3;
     };
   }
